@@ -223,6 +223,7 @@
   <item component="ComponentInfo{com.aimp.player/com.aimp.player.ui.activities.main.MainActivity}" drawable="aimp" name="AIMP" />
   <item component="ComponentInfo{com.airfrance.android.dinamoprd/com.airfrance.android.totoro.ui.activity.main.MainActivity}" drawable="air_france" name="Air France" />
   <item component="ComponentInfo{com.airfrance.android.dinamoprd/com.airfrance.android.totoro.homepage.activity.MainActivity}" drawable="air_france" name="Air France" />
+  <item component="ComponentInfo{com.airmiles/com.airmiles.modules.welcome.splash.SplashActivity}" drawable="air_miles" name="Air Miles"/>
   <item component="ComponentInfo{com.transat.airtransat/com.transat.airtransat.main.MainActivity}" drawable="air_transat" name="Air Transat" />
   <item component="ComponentInfo{com.airbnb.android/com.airbnb.android.activities.HomeActivityAlias}" drawable="airbnb" name="Airbnb" />
   <item component="ComponentInfo{com.airbnb.android/com.airbnb.android.activities.MainActivity}" drawable="airbnb" name="Airbnb" />
@@ -3100,6 +3101,7 @@
   <item component="ComponentInfo{fontweight.adjustment/fontweight.adjustment.MainActivity}" drawable="fontweight" name="fontweight" />
   <item component="ComponentInfo{com.foobar2000.foobar2000/com.foobar2000.foobar2000.MainActivity}" drawable="foobar2000" name="foobar2000" />
   <item component="ComponentInfo{com.cav.foobar2000controllerpro/com.cav.foobar2000controllerpro.MainActivity}" drawable="foobar2000" name="foobar2000 controller" />
+  <item component="ComponentInfo{com.metro.foodbasics/com.appcom.foodbasics.feature.SplashActivity}" drawable="food_basics" name="Food Basics"/>
   <item component="ComponentInfo{app.suhasdissa.foode/app.suhasdissa.foode.MainActivity}" drawable="food_e" name="Food-E" />
   <item component="ComponentInfo{com.linecorp.foodcam.android/com.linecorp.foodcam.android.camera.CameraActivity}" drawable="foodie" name="foodie" />
   <item component="ComponentInfo{com.global.foodpanda.android/com.global.foodpanda.android.activities.SplashScreenActivity}" drawable="foodpanda" name="foodpanda" />
@@ -5136,6 +5138,7 @@
   <item component="ComponentInfo{ch.admin.meteoswiss/ch.admin.meteoswiss.MainActivity}" drawable="meteo_swiss" name="MeteoSwiss" />
   <item component="ComponentInfo{io.github.muntashirakon.Music/code.name.monkey.retromusic.activities.MainActivity}" drawable="retro_music" name="Metro" />
   <item component="ComponentInfo{io.github.muntashirakon.Music/io.github.muntashirakon.music.activities.MainActivity}" drawable="retro_music" name="Metro" />
+  <item component="ComponentInfo{metro.mobile/crc649400f87247b1af1a.MainActivity}" drawable="metro" name="Metro"/>
   <item component="ComponentInfo{ridewithvia.metroflexseattle/via.rider.features.splash.SplashActivityKt}" drawable="metro_flex" name="Metro Flex" />
   <item component="ComponentInfo{ph.com.metrobank.metrobankdirectmobile/ph.com.metrobank.metrobankdirectmobile.MainActivity}" drawable="metrobank" name="Metrobank" />
   <item component="ComponentInfo{br.gov.datasus.cnsdigital/br.gov.datasus.cnsdigital.MainActivity}" drawable="meu_sus_digital" name="Meu SUS Digital" />
@@ -6437,6 +6440,7 @@
   <item component="ComponentInfo{in.insider.consumer/in.insider.activity.SplashScreenActivity}" drawable="paytm_insider" name="Paytm Insider" />
   <item component="ComponentInfo{com.hdfcbank.payzapp/com.apollorncontainer.activities.SplashActivity}" drawable="payzapp" name="PayZapp" />
   <item component="ComponentInfo{com.indraanisa.pcbuilder/com.indraanisa.pcbuilder.pcbuild.PcBuildActivity}" drawable="pc_builder" name="PC Builder" />
+  <item component="ComponentInfo{com.sap.mdc.loblaw.nativ/com.loblaw.pcoptimum.android.app.view.main.MainActivity}" drawable="pc_optimum" name="PC Optimum"/>
   <item component="ComponentInfo{com.monect.portable/com.monect.core.ui.main.ComMainActivity}" drawable="pc_remote" name="PC Remote" />
   <item component="ComponentInfo{com.emanuelef.remote_capture/com.emanuelef.remote_capture.activities.MainActivity}" drawable="pcapdroid" name="PCAPdroid" />
   <item component="ComponentInfo{com.pcloud.pcloud/com.pcloud.screens.Main}" drawable="pcloud" name="pCloud" />
