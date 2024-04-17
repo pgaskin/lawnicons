@@ -4713,6 +4713,8 @@
   <item component="ComponentInfo{com.literal/com.literal.MainActivity}" drawable="literal" name="Literal" />
   <item component="ComponentInfo{com.faultexception.reader/com.faultexception.reader.MainActivity}" drawable="lithium" name="Lithium" />
   <item component="ComponentInfo{com.faultexception.reader.pro/com.faultexception.reader.pro.MainActivity}" drawable="lithium_pro" name="Lithium" />
+  <item component="ComponentInfo{com.faultexception.reader.patched/com.faultexception.reader.MainActivity}" drawable="lithium_patched" name="Lithium" />
+  <item component="ComponentInfo{com.faultexception.reader.patched.pg/com.faultexception.reader.MainActivity}" drawable="lithium_patched" name="Lithium" />
   <item component="ComponentInfo{hello.litiaotiao.app/hello.litiaotiao.app.LauncherActivity}" drawable="litiaotiao" name="Litiaotiao" />
   <item component="ComponentInfo{com.litatom.app/com.lit.app.ui.SplashActivity}" drawable="litmatch" name="Litmatch" />
   <item component="ComponentInfo{com.example.retouchephoto/com.example.litrato.activities.MainActivity}" drawable="photo_editor" name="Litrato" />
