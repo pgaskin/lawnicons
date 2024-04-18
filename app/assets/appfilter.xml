@@ -9857,6 +9857,7 @@
   <item component="ComponentInfo{com.frontrow.vlog/com.frontrow.vlog.ui.splash.SplashActivity}" drawable="vn" name="VN" />
   <item component="ComponentInfo{com.realvnc.viewer.android/com.realvnc.viewer.android.app.ConnectionChooserActivity}" drawable="realvnc" name="VNC Viewer" />
   <item component="ComponentInfo{com.realvnc.viewer.android/com.realvnc.viewer.android.ConnectionChooserActivity}" drawable="realvnc" name="VNC Viewer" />
+  <item component="ComponentInfo{com.realvnc.viewer.android.patched/com.realvnc.viewer.android.app.ConnectionChooserActivity}" drawable="realvnc" name="VNC Viewer" />
   <item component="ComponentInfo{com.vnid/com.vnid.MainActivity}" drawable="vneid" name="VNeID" />
   <item component="ComponentInfo{vnptpay.vnptmedia.vnpt.com.vnptpay/vn.vnptpay.ui.SplashActivity}" drawable="vnpt_money" name="VNPT Money" />
   <item component="ComponentInfo{dev.umfahrer.vocabulary/dev.umfahrer.vocabulary.MainActivity}" drawable="vocabulary_trainer" name="Vocabulary Trainer" />
