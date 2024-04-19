@@ -1601,6 +1601,7 @@
   <item component="ComponentInfo{com.piriform.ccleaner/com.avast.android.cleaner.activity.StartActivity}" drawable="ccleaner" name="CCleaner" />
   <item component="ComponentInfo{pl.cda/pl.cda.ui.welcome.WelcomeActivity}" drawable="cda" name="CDA" />
   <item component="ComponentInfo{cellmapper.net.cellmapper/cellmapper.net.cellmapper.MainActivity}" drawable="cellmapper" name="Cellmapper" />
+  <item component="ComponentInfo{dev.zwander.cellreader/dev.zwander.cellreader.MainActivity}" drawable="cellreader" name="CellReader" />
   <item component="ComponentInfo{com.infrasofttech.CentralBank/com.infrasofttech.CentralBank.CentMobile}" drawable="central_bank_of_india" name="Central Bank of India" />
   <item component="ComponentInfo{com.infrasofttech.CentralBank/com.infrasofttech.centralbank.SplashActivity}" drawable="central_bank_of_india" name="Central Bank of India" />
   <item component="ComponentInfo{com.apcpdcl.customerapp/com.apcpdcl.customerapp.Splashscreen}" drawable="central_power" name="Central Power" />
