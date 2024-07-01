@@ -10,8 +10,8 @@ import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.toBitmap
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import app.lawnchair.lawnicons.ui.Lawnicons
@@ -33,12 +33,12 @@ class MainActivity : ComponentActivity() {
             val context = LocalContext.current
             val windowSizeClass = calculateWindowSizeClass(this)
             Lawnicons(
-                windowSizeClass,
-                @Suppress("DEPRECATION") {
-                        iconInfo ->
+                windowSizeClass = windowSizeClass,
+                onSendResult = { iconInfo ->
                     val intent = Intent()
 
-                    val bitmap = context.resources.getDrawable(iconInfo.id).toBitmap()
+                    val bitmap = ResourcesCompat.getDrawable(context.resources, iconInfo.id, null)
+                        ?.toBitmap()
 
                     if (bitmap != null) {
                         try {
@@ -60,8 +60,7 @@ class MainActivity : ComponentActivity() {
                     }
                     finish()
                 },
-                Modifier,
-                isIconPicker,
+                isIconPicker = isIconPicker,
             )
         }
     }

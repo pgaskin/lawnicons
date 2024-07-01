@@ -33,6 +33,7 @@ import app.lawnchair.lawnicons.ui.components.core.Card
 import app.lawnchair.lawnicons.ui.components.core.LawniconsScaffold
 import app.lawnchair.lawnicons.ui.components.core.SimpleListRow
 import app.lawnchair.lawnicons.ui.theme.LawniconsTheme
+import app.lawnchair.lawnicons.ui.util.Constants
 import app.lawnchair.lawnicons.ui.util.Contributor
 import app.lawnchair.lawnicons.ui.util.Destinations
 import app.lawnchair.lawnicons.ui.util.ExternalLink
@@ -43,12 +44,12 @@ private val externalLinks = listOf(
     ExternalLink(
         iconResId = R.drawable.github_foreground,
         name = R.string.github,
-        url = "https://github.com/LawnchairLauncher/lawnicons",
+        url = "${Constants.GITHUB}",
     ),
     ExternalLink(
-        iconResId = R.drawable.oxygen_updater_foreground,
+        iconResId = R.drawable.icon_request_app,
         name = R.string.request_form,
-        url = "https://forms.gle/xt7sJhgWEasuo9TR9",
+        url = Constants.ICON_REQUEST_FORM,
     ),
 )
 
@@ -185,6 +186,15 @@ fun About(
                             socialUrl = it.socialUrl,
                         )
                     }
+                }
+            }
+            item {
+                Card(modifier = Modifier.padding(top = 16.dp)) {
+                    SimpleListRow(
+                        onClick = { onNavigate(Destinations.ACKNOWLEDGEMENTS) },
+                        label = stringResource(id = R.string.acknowledgements),
+                        divider = false,
+                    )
                 }
             }
         }
