@@ -24,25 +24,7 @@ object AppfilterDiffCreator {
     private fun getPreviousReleaseLines(
         appFilterFile: String,
     ): List<String> {
-        return try {
-            runGitCommand(listOf("fetch", "--tags"))
-
-            val tagCommand =
-                listOf("/usr/bin/bash", "-c", "git tag --sort=-creatordate | head -n 1")
-            val tagProcess = ProcessBuilder(tagCommand)
-                .redirectErrorStream(true)
-                .start()
-
-            val latestTag = tagProcess.inputStream.bufferedReader().readLine()
-            if (tagProcess.waitFor() != 0) {
-                throw RuntimeException("Failed to get latest tag")
-            }
-
-            runGitCommand(listOf("show", "$latestTag:$appFilterFile"))
-        } catch (e: Exception) {
-            println(e)
-            listOf()
-        }
+        return listOf()
     }
 
     private fun runGitCommand(
