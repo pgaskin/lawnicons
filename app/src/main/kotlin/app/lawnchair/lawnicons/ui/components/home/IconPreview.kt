@@ -18,7 +18,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -33,11 +33,12 @@ import app.lawnchair.lawnicons.ui.util.PreviewLawnicons
 import app.lawnchair.lawnicons.ui.util.SampleData
 import kotlin.math.ln
 
-private fun ColorScheme.iconColor(): Color {
-    val elevation = 3.dp
-    val alpha = ((4.5f * ln(elevation.value + 1)) + 2f) / 100f
-    return primary.copy(alpha = alpha).compositeOver(surface)
-}
+val ColorScheme.iconColor: Color
+    get() {
+        val elevation = 3.dp
+        val alpha = ((4.5f * ln(elevation.value + 1)) + 2f) / 100f
+        return primary.copy(alpha = alpha).compositeOver(surface)
+    }
 
 @Composable
 fun IconPreview(
@@ -47,7 +48,7 @@ fun IconPreview(
     iconBackground: Color? = null,
     isIconPicker: Boolean = false,
 ) {
-    val isIconInfoShown = remember { mutableStateOf(false) }
+    val isIconInfoShown = rememberSaveable { mutableStateOf(false) }
 
     Box(
         contentAlignment = Alignment.Center,
@@ -68,7 +69,7 @@ fun IconPreview(
                 color = iconBackground ?: if (isIconInfoShown.value) {
                     MaterialTheme.colorScheme.surfaceVariant
                 } else {
-                    MaterialTheme.colorScheme.iconColor()
+                    MaterialTheme.colorScheme.iconColor
                 },
             ),
     ) {
